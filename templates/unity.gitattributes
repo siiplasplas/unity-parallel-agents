@@ -1,0 +1,16 @@
+# Route Unity's serialized YAML through Smart Merge (UnityYAMLMerge).
+# Register the driver once per machine (see README, "Smart Merge").
+*.unity      merge=unityyamlmerge
+*.prefab     merge=unityyamlmerge
+*.asset      merge=unityyamlmerge
+*.anim       merge=unityyamlmerge
+*.controller merge=unityyamlmerge
+*.mat        merge=unityyamlmerge
+
+# Never text-merge binaries.
+*.png  binary
+*.psd  binary
+*.fbx  binary
+*.wav  binary
+*.mp3  binary
+*.ogg  binary
